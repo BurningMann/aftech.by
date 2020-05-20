@@ -19,6 +19,6 @@ window.onload = function(){
   /* end перевод картинки svg в код */
   $(".accordion_box .element > .title").click(function(){
     $(this).toggleClass("open")
-    $(this).closest(".element").find(".content").slideToggle()
+    $(this).closest(".element").children(".content").slideToggle()
   })
 }

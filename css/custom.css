@@ -251,11 +251,15 @@
 	z-index: 1;
 	padding-right: 30rem;
 }
-.product_section .accordion_box {}
+.product_section .accordion_box.sub{
+	padding: 0 20px ;
+}
 .product_section .accordion_box .element {
 	color: #FFFFFF;
 	border-bottom: 1px solid #363B42;
-	;
+}
+.product_section .accordion_box.sub .element:last-child {
+	border-bottom: none;
 }
 .product_section .accordion_box .element .title {
 	font-weight: bold;
@@ -267,20 +271,21 @@
 	cursor: pointer;
 	position: relative;
 }
-.product_section .accordion_box .element .title svg {
+.product_section .accordion_box .element .title > svg {
 	transition: 0.3s;
 }
-.product_section .accordion_box .element .title.open svg {
+.product_section .accordion_box .element .title.open > svg {
 	transform: rotate(90deg);
 }
-.product_section .accordion_box .element .title.open svg path {
+.product_section .accordion_box .element .title.open > svg path {
 	stroke: #E58707;
 }
-.product_section .accordion_box .element .title:hover, .product_section .accordion_box .element .title.open {
+.product_section .accordion_box.main > .element > .title:hover, .product_section .accordion_box.main > .element > .title.open {
 	background: #232B39;
-	;
 }
-.product_section .accordion_box .element .title.open::before {
+
+
+.product_section .accordion_box.main > .element > .title.open::before {
 	content: "";
 	display: block;
 	position: absolute;
@@ -293,6 +298,9 @@
 .product_section .accordion_box .element .content {
 	padding: 20px 0;
 	display: none;
+}
+.product_section .accordion_box.main .element .content {
+	padding: 0;
 }
 .doc_box {
 	display: flex;
