@@ -43,12 +43,14 @@
 .catalog_block__ico {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 .catalog_block__ico img {
 	width: 100%;
 }
 .section-catalog .catalog_block__ico img {
 	width: auto;
+	max-width: 70px;
 }
 .catalog_block__ico>span {
 	color: white;
